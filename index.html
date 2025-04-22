@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333;">
-    <header style="text-align: center; padding: 50px 0;">
+<body style="font-family: 'Poppins', sans-serif; background-color: #fafafa; color: #333; margin: 0; padding: 0;">
+    <!-- Header Section -->
+    <header style="text-align: center; padding: 50px 0; background-color: #0d6efd; color: white;">
         <h1>Welcome to ShibeBucks (SBX)</h1>
-        <p>Your new meme coin on Solana blockchain</p>
+        <p>Your new meme coin on the Solana blockchain</p>
     </header>
 
+    <!-- Main Content Section -->
     <div style="max-width: 900px; margin: auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-        <h2>Our Whitepaper</h2>
-        <p>Read the full ShibeBucks whitepaper below:</p>
-        <div>
-            <h3>ShibeBucks Whitepaper</h3>
-            <div id="content" style="font-size: 16px; line-height: 1.6;">
-                <!-- Markdown file will be loaded here -->
-            </div>
+        <h2 style="text-align: center;">Our Whitepaper</h2>
+        <p style="font-size: 16px; line-height: 1.6;">Read the full ShibeBucks whitepaper below:</p>
+        
+        <div id="content" style="font-size: 16px; line-height: 1.6; padding: 20px;">
+            <!-- The markdown content will be inserted here -->
         </div>
     </div>
 
+    <!-- Footer Section -->
     <footer style="text-align: center; padding: 20px 0; background-color: #222; color: white;">
         <p>ShibeBucks &copy; 2025 | Powered by Solana Blockchain</p>
     </footer>
 
+    <!-- Script to load and render Markdown content -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         fetch('shibebucks.md')
