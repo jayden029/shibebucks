@@ -11,20 +11,20 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #111111; /* Dark background for contrast */
+            background-color: #1a1a1a; /* Dark background to make bright colors pop */
             color: #f0f0f0;
         }
 
         header {
-            background-color: #FF007F; /* Use a bright, attention-grabbing color */
+            background-color: #FF00FF; /* Example of a bright color from your logo */
             color: white;
             padding: 100px 0;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
 
         header img {
-            width: 200px;
+            width: 180px;
             margin-bottom: 20px;
             border-radius: 50%;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -35,6 +35,8 @@
             font-weight: 700;
             margin: 0;
             text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 2.5rem;
         }
 
         header p {
@@ -42,39 +44,52 @@
             margin-top: 10px;
         }
 
-        /* Styling for the content */
+        /* Content container */
         .content-container {
             max-width: 1000px;
             margin: auto;
             padding: 30px;
-            background-color: #1F1F1F; /* Dark background for content */
-            border-radius: 10px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            background-color: #212121;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
             margin-top: -50px;
             position: relative;
             z-index: 1;
         }
 
         .section-title {
-            color: #FF007F; /* Bright color for headings */
+            color: #FF00FF; /* Bright color from your logo */
             font-size: 28px;
             text-align: center;
             font-weight: 600;
             margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         .content-container p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.8;
             text-align: center;
             margin-bottom: 20px;
         }
 
+        .content-container ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .content-container li {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
         /* Button Styling */
         .cta-button {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #FF007F; /* Bright color for CTA */
+            padding: 18px 35px;
+            background-color: #FF00FF; /* Match logo color */
             color: white;
             font-weight: bold;
             text-transform: uppercase;
@@ -82,12 +97,12 @@
             border: none;
             border-radius: 50px;
             text-decoration: none;
-            margin-top: 30px;
+            margin-top: 40px;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .cta-button:hover {
-            background-color: #FF0056;
+            background-color: #FF0088; /* Slightly darker color for hover effect */
             transform: scale(1.1);
         }
 
@@ -99,7 +114,7 @@
             color: white;
         }
 
-        /* Additional animations */
+        /* Animated fade-in */
         .animate-fade {
             opacity: 0;
             animation: fadeIn 2s ease-out forwards;
@@ -112,9 +127,8 @@
         }
 
         .section-title, .content-container {
-            animation: fadeIn 1.5s ease-out;
+            animation: fadeIn 2s ease-out;
         }
-
     </style>
 </head>
 <body>
@@ -151,4 +165,3 @@
     </footer>
 </body>
 </html>
-
