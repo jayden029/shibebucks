@@ -9,19 +9,19 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
+            background-color: #fafafa;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #003366; /* Je originele kleur */
+            background-color: #003366; /* Jouw originele kleur voor de header */
             color: white;
             padding: 50px 0;
             text-align: center;
         }
         header img {
-            width: 200px; /* Pas de grootte van je logo aan indien nodig */
+            width: 200px; /* De grootte van je logo kan hier worden aangepast */
             margin-bottom: 20px;
         }
         .content-container {
@@ -49,7 +49,7 @@
 
     <!-- Header Section -->
     <header>
-        <img src="logo.png" alt="ShibeBucks Logo"> <!-- Zorg ervoor dat je logo bestand in de repository staat -->
+        <img src="logo.png" alt="ShibeBucks Logo"> <!-- Zorg ervoor dat je logo in de juiste map staat -->
         <h1>Welcome to ShibeBucks (SBX)</h1>
         <p>Your new meme coin on the Solana blockchain</p>
     </header>
@@ -60,7 +60,7 @@
         <p style="font-size: 16px; line-height: 1.6;">Read the full ShibeBucks whitepaper below:</p>
 
         <div id="content">
-            <!-- Markdown content will be loaded here -->
+            <!-- Het Markdown bestand wordt hier ingeladen -->
             <p>Loading Whitepaper...</p>
         </div>
     </div>
@@ -73,7 +73,7 @@
     <!-- JavaScript to load Markdown content -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        fetch('shibebucks.md')
+        fetch('shibebucks.md')  <!-- Zorg ervoor dat shibebucks.md in dezelfde map staat -->
             .then(response => response.text())
             .then(text => {
                 document.getElementById('content').innerHTML = marked.parse(text);
@@ -84,3 +84,4 @@
     </script>
 </body>
 </html>
+
