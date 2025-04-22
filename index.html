@@ -27,16 +27,17 @@
     <footer style="text-align: center; padding: 20px 0; background-color: #222; color: white;">
         <p>ShibeBucks &copy; 2025 | Powered by Solana Blockchain</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
-    fetch('shibebucks.md')
-        .then(response => response.text())
-        .then(text => {
-            document.getElementById('content').innerHTML = marked.parse(text);
-        })
-        .catch(error => {
-            document.getElementById('content').innerHTML = "<p>Sorry, we konden de whitepaper niet laden.</p>";
-        });
-</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        fetch('shibebucks.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = "<p>Sorry, we couldn't load the whitepaper.</p>";
+            });
+    </script>
 </body>
 </html>
