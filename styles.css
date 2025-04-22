@@ -75,3 +75,49 @@ footer {
 
     margin-top: 30px;
 }
+/* Navigatiemenu stijlen */
+nav {
+    background-color: #2e2e2e; /* Donkergrijze achtergrond */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00d000; /* Groen hover effect */
+}
+
+/* Zorg ervoor dat de secties goed zichtbaar zijn */
+.content-container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Stijl voor de secties */
+.section-title {
+    color: #FF6600; /* Oranje voor sectietitels */
+    font-size: 24px;
+}
+
+.section-content {
+    color: #FFFFFF;
+    line-height: 1.6;
+    font-size: 16px;
+}
