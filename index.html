@@ -14,6 +14,7 @@
             background-color: #1a1a1a; /* Dark background to make bright colors pop */
             color: #f0f0f0;
             overflow-x: hidden;
+            z-index: 1;
         }
 
         header {
@@ -22,6 +23,8 @@
             padding: 100px 0;
             text-align: center;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
         }
 
         header img {
@@ -35,135 +38,4 @@
             font-size: 48px;
             font-weight: 700;
             margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        /* Content container */
-        .content-container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 30px;
-            background-color: #212121;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-            margin-top: -50px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .section-title {
-            color: #FF00FF; /* Bright color from your logo */
-            font-size: 28px;
-            text-align: center;
-            font-weight: 600;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .content-container p {
-            font-size: 18px;
-            line-height: 1.8;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .content-container ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-
-        .content-container li {
-            padding: 10px;
-            border-bottom: 1px solid #333;
-        }
-
-        /* Button Styling */
-        .cta-button {
-            display: inline-block;
-            padding: 18px 35px;
-            background-color: #FF00FF; /* Match logo color */
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 18px;
-            border: none;
-            border-radius: 50px;
-            text-decoration: none;
-            margin-top: 40px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #FF0088; /* Slightly darker color for hover effect */
-            transform: scale(1.1);
-        }
-
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #111111;
-            color: white;
-        }
-
-        /* Animated fade-in */
-        .animate-fade {
-            opacity: 0;
-            animation: fadeIn 2s ease-out forwards;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        .section-title, .content-container {
-            animation: fadeIn 2s ease-out;
-        }
-    </style>
-</head>
-<body>
-    <header class="animate-fade">
-        <img src="logo.png" alt="ShibeBucks Logo">
-        <h1>ShibeBucks (SBX)</h1>
-        <p>Your new meme coin on the Solana blockchain</p>
-    </header>
-
-    <div class="content-container animate-fade">
-        <h2 class="section-title">About ShibeBucks</h2>
-        <p>ShibeBucks (SBX) is the next big meme coin on the Solana blockchain, designed to offer fast transactions and low fees, creating a fun community-driven token for everyone to enjoy.</p>
-
-        <h2 class="section-title">Our Mission</h2>
-        <p>ShibeBucks aims to bring the meme coin culture to the Solana blockchain, making it faster, cheaper, and more efficient for all its users. With our strong community and commitment to low fees, we are determined to be the top meme coin in the market.</p>
-
-        <h2 class="section-title">Token Distribution</h2>
-        <ul>
-            <li>🔥 **20% Burned at Launch** → 200,000,000 SBX</li>
-            <li>💧 **26% Liquidity Pool** → 260,000,000 SBX</li>
-            <li>🎁 **24% Community Rewards / Airdrops**</li>
-            <li>📣 **20% Marketing / Listings**</li>
-            <li>👨‍💻 **10% Team** (locked for 2 months)</li>
-        </ul>
-
-        <h2 class="section-title">Why Choose SBX?</h2>
-        <p>ShibeBucks stands out because of its community-driven approach. We prioritize transparency and long-term value for our holders. Join us and be part of the fastest-growing meme coin on Solana!</p>
-
-        <a href="https://www.yourpresale.com" class="cta-button">Join the Presale</a>
-    </div>
-
-    <footer>
-        <p>ShibeBucks &copy; 2025 | Powered by Solana Blockchain</p>
-    </footer>
-</body>
-</html>
-
+            text-transform
