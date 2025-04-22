@@ -4,63 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShibeBucks (SBX) - Official Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* General Page Styling */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #eaf5e1; /* Lichte groene tint als achtergrond */
+            color: #333; /* Donkere tekstkleur voor contrast */
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a; /* Dark background to make bright colors pop */
-            color: #f0f0f0;
-            overflow-x: hidden;
-            z-index: 1;
         }
 
         header {
-            background-color: #FF00FF; /* Example of a bright color from your logo */
+            background-color: #3c9d3c; /* Groene achtergrond voor de header */
             color: white;
-            padding: 100px 0;
             text-align: center;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-            position: relative;
-            z-index: 2;
+            padding: 50px;
         }
 
         header img {
-            width: 180px;
-            margin-bottom: 20px;
+            width: 150px;
             border-radius: 50%;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        header h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 2.5rem;
+        h1 {
+            font-size: 2.5em;
         }
 
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        /* Content container */
         .content-container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 30px;
-            background-color: #212121;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-            margin-top: -50px;
-            position: relative;
-            z-index: 3;
-            background-color: rgba(33, 33, 33, 0.95); /* Slight transparency to let background show but not overpower text */
+            margin: 50px auto;
+            max-width: 900px;
+            padding: 20px;
+            background-color: white; /* Witte achtergrond voor de content */
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw voor diepte */
         }
 
-        .section-title {
-            color: #FF00FF; /* Bright color from your logo */
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #3c9d3c; /* Groene knopkleur */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #3c9d3c; /* Groene footer achtergrond */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .highlight {
+            color: #ffdb3e; /* Accentgeel voor belangrijke tekst */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="ShibeBucks Logo">
+        <h1>ShibeBucks (SBX)</h1>
+        <p>Your new meme coin on the Solana blockchain</p>
+    </header>
+
+    <div class="content-container">
+        <h2>About ShibeBucks</h2>
+        <p>ShibeBucks (SBX) is a meme coin created on the Solana blockchain with the aim of bringing more fun, fast transactions, and community-driven growth. Join us in making this the next big thing in the world of meme coins!</p>
+        
+        <h3>Features:</h3>
+        <ul>
+            <li>Fast and low-cost transactions</li>
+            <li>Community-driven with rewards and airdrops</li>
+            <li>Built on the Solana blockchain for scalability</li>
+        </ul>
+
+        <p>With <span class="highlight">20% burned</span> at launch, 26% in liquidity, and 24% reserved for community rewards and airdrops, we are committed to growing the ShibeBucks ecosystem.</p>
+        <a href="https://yourpresale.com" class="cta-button">Join the Presale</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ShibeBucks. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
