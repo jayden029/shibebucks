@@ -6,50 +6,125 @@
     <title>ShibeBucks (SBX) - Official Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        /* General Page Styling */
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f7fc;
-            color: #333;
             margin: 0;
             padding: 0;
+            background-color: #111111; /* Dark background for contrast */
+            color: #f0f0f0;
         }
+
         header {
-            background-color: #003366;
+            background-color: #FF007F; /* Use a bright, attention-grabbing color */
             color: white;
-            padding: 50px 0;
+            padding: 100px 0;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+
         header img {
             width: 200px;
             margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Styling for the content */
         .content-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: #1F1F1F; /* Dark background for content */
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            margin-top: -50px;
+            position: relative;
+            z-index: 1;
         }
+
+        .section-title {
+            color: #FF007F; /* Bright color for headings */
+            font-size: 28px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .content-container p {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #FF007F; /* Bright color for CTA */
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FF0056;
+            transform: scale(1.1);
+        }
+
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #222;
+            background-color: #111111;
             color: white;
         }
-        .section-title {
-            color: #003366;
+
+        /* Additional animations */
+        .animate-fade {
+            opacity: 0;
+            animation: fadeIn 2s ease-out forwards;
         }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .section-title, .content-container {
+            animation: fadeIn 1.5s ease-out;
+        }
+
     </style>
 </head>
 <body>
-    <header>
+    <header class="animate-fade">
         <img src="logo.png" alt="ShibeBucks Logo">
-        <h1>Welcome to ShibeBucks (SBX)</h1>
+        <h1>ShibeBucks (SBX)</h1>
         <p>Your new meme coin on the Solana blockchain</p>
     </header>
 
-    <div class="content-container">
+    <div class="content-container animate-fade">
         <h2 class="section-title">About ShibeBucks</h2>
         <p>ShibeBucks (SBX) is the next big meme coin on the Solana blockchain, designed to offer fast transactions and low fees, creating a fun community-driven token for everyone to enjoy.</p>
 
@@ -67,6 +142,8 @@
 
         <h2 class="section-title">Why Choose SBX?</h2>
         <p>ShibeBucks stands out because of its community-driven approach. We prioritize transparency and long-term value for our holders. Join us and be part of the fastest-growing meme coin on Solana!</p>
+
+        <a href="https://www.yourpresale.com" class="cta-button">Join the Presale</a>
     </div>
 
     <footer>
@@ -74,3 +151,4 @@
     </footer>
 </body>
 </html>
+
