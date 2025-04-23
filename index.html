@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShibeBucks (SBX)</title>
+    <title>ShibeBucks (SBX) - Meme Coin op de Solana Blockchain</title>
     <style>
         /* Algemene body instellingen */
         body {
@@ -76,6 +76,7 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
         }
 
         section h2 {
@@ -130,31 +131,72 @@
         .tokenomics li {
             font-size: 1.2em;
         }
+
+        /* Email Subscription Form */
+        .email-subscription {
+            background-color: #E67E22;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+
+        .email-subscription input {
+            padding: 10px;
+            font-size: 1em;
+            width: 70%;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .email-subscription button {
+            padding: 12px 20px;
+            font-size: 1.2em;
+            background-color: #16A085;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .email-subscription button:hover {
+            background-color: #F39C12;
+        }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="logo.png" alt="ShibeBucks Logo" style="max-width: 250px;">
         <h1>ShibeBucks (SBX)</h1>
         <p>Uw nieuwe meme-munt op de Solana-blockchain</p>
         <a href="#ourstory" class="cta-btn">Lees Meer</a>
     </header>
 
     <nav>
-        <a href="#ourstory">Over ShibeBucks</a>
-        <a href="#mission">Onze Missie</a>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="#burning">Hoe We Branden</a>
+        <a href="#ourstory" onclick="showSection('ourstory')">Our Vision</a>
+        <a href="#vision" onclick="showSection('vision')">The Future</a>
+        <a href="#future" onclick="showSection('future')">The Process</a>
+        <a href="#tokenomics" onclick="showSection('tokenomics')">Whitepaper</a>
     </nav>
 
     <section id="ourstory">
-        <h2>Over ShibeBucks</h2>
+        <h2>Our Story</h2>
         <p>ShibeBucks (SBX) is een meme-munt die is gemaakt op de Solana-blockchain met als doel meer leuke, snelle transacties en door de gemeenschap aangestuurde groei te bieden. Doe met ons mee om dit het volgende grote ding in de wereld van meme-munten te maken!</p>
+        <p>Wij geloven in de kracht van de gemeenschap. ShibeBucks is ontworpen om een breed publiek aan te spreken en de kracht van meme-cultuur te combineren met de voordelen van de Solana blockchain. We zijn er trots op om een munt te bieden die niet alleen snel en goedkoop is, maar ook een positieve impact heeft op de wereld van crypto. Het is meer dan een meme-munt, het is een beweging!</p>
     </section>
 
-    <section id="mission">
-        <h2>Onze Missie</h2>
-        <p>Bij ShibeBucks geloven we in gemeenschap. Onze missie is om een meme-munt te maken die opvalt, groeit door betrokkenheid van de gemeenschap en leuk en snel blijft op de Solana-blockchain. Met innovatieve functies en een focus op decentralisatie is ShibeBucks de meme-munt van de toekomst!</p>
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>Bij ShibeBucks geloven we in gemeenschap. Onze visie is om een meme-munt te creëren die de kracht van de Solana-blockchain benut om nieuwe mogelijkheden en snelle, veilige transacties te bieden. We willen mensen verbinden en een platform bieden waar de gemeenschap kan bijdragen aan de toekomst van ShibeBucks.</p>
+        <p>Onze focus ligt op decentralisatie, transparantie en de betrokkenheid van de gemeenschap bij elke stap van de ontwikkeling. We zijn vastbesloten om van ShibeBucks de nummer één meme-munt in de crypto-ruimte te maken, door innovatieve functies toe te voegen die het gebruik ervan vereenvoudigen en het bereik vergroten.</p>
+    </section>
+
+    <section id="future">
+        <h2>The Future</h2>
+        <p>De toekomst van ShibeBucks is spannend en vol mogelijkheden. We blijven groeien en verbeteren, met plannen voor staking, exclusieve communitybeloningen, en verdere integratie van de ShibeBucks-community in de crypto-ruimte. Ons doel is om van ShibeBucks de meest populaire meme-munt in de crypto-ruimte te maken.</p>
+        <p>Onze ambitie is om ShibeBucks te blijven uitbreiden met nieuwe technologieën, partnerschappen en projecten die de gemeenschap versterken. Blijf op de hoogte voor spannende ontwikkelingen en nieuwe aankondigingen!</p>
     </section>
 
     <section id="tokenomics">
@@ -171,17 +213,40 @@
     </section>
 
     <section id="burning">
-        <h2>Hoe We Branden</h2>
+        <h2>How We Burn</h2>
         <p>Bij de lancering zal 20% van het totale aanbod van ShibeBucks worden verbrand. Dit proces vermindert het totale aanbod en creëert schaarste, waardoor uiteindelijk de waarde van de resterende tokens toeneemt. Wij geloven in transparantie en veiligheid en zorgen ervoor dat het brandproces zichtbaar is voor de gemeenschap en goed wordt uitgevoerd.</p>
     </section>
 
+    <section class="email-subscription">
+        <h2>Stay Updated</h2>
+        <p>Wil je op de hoogte blijven van de laatste updates over ShibeBucks? Vul hieronder je e-mailadres in!</p>
+        <form action="#">
+            <input type="email" placeholder="Voer je e-mail in" required>
+            <button type="submit">Abonneer</button>
+        </form>
+    </section>
+
     <footer>
-        <a href="#ourstory">Over ShibeBucks</a>
-        <a href="#mission">Onze Missie</a>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="#burning">Hoe We Branden</a>
+        <a href="#presale" class="cta-btn">Deelnemen aan Pre-sale</a>
     </footer>
 
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            var activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.style.display = 'block';
+            }
+        }
+
+        // Show the "Our Story" section by default when the page loads
+        showSection('ourstory');
+    </script>
 </body>
 </html>
+
 
