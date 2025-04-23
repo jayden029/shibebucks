@@ -127,3 +127,45 @@ html {
 html {
     scroll-behavior: smooth;
 }
+.footer-nav {
+  background-color: #fffdf0;
+  color: #333;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid #ff6600;
+}
+
+.footer-container h4 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  color: #ff6600;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #cc5200;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 20px;
+}
+
