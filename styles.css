@@ -6,11 +6,11 @@ body {
   color: #222;
   text-align: center;
 }
-
 header {
-  background: #FF8C00;
-  color: white;
-  padding: 40px 20px;
+    background-color: #4CAF50; /* Groen van het logo */
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
 
 .logo {
