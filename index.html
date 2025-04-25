@@ -1,214 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ShibeBucks (SBX)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        /* Algemene instellingen */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        h1, h2, h3 {
-            color: #4CAF50; /* Groen van het logo */
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        /* Header */
-        header {
-            background-color: #4CAF50; /* Groen van het logo */
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        header img {
-            width: 150px; /* Pas de breedte van het logo aan */
-            height: auto;
-        }
-
-        /* Navigatie */
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 15px;
-            background-color: #FFA500; /* Oranje kleur */
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            background-color: #ff8c00;
-        }
-
-        /* Hoofdpagina sectie */
-        .main-section {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        .main-section h2 {
-            color: #4CAF50; /* Groen van het logo */
-        }
-
-        .main-section p {
-            margin-bottom: 30px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        footer form input[type="email"] {
-            padding: 10px;
-            width: 250px;
-            margin-right: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-
-        footer form button {
-            padding: 10px 20px;
-            background-color: #FFA500; /* Oranje kleur */
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        footer form button:hover {
-            background-color: #ff8c00;
-        }
-
-        /* Secties voor navigatie */
-        .section {
-            display: none;
-            padding: 60px 20px;
-            background-color: #ffffff;
-            text-align: center;
-            color: #333;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        /* Presale button */
-        .presale-button {
-            padding: 12px 20px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 30px;
-        }
-
-        .presale-button:hover {
-            background-color: #45a049;
-        }
-
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShibeBucks (SBX)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eafbee;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #2f9c41;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2f9c41;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border: 2px solid #ff7c2d;
+      border-radius: 5px;
+      background: white;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #ff7c2d;
+      color: white;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2f9c41;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .discord-banner {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .discord-banner a {
+      background: #7289da;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1 class="fade-in">ShibeBucks (SBX)</h1>
+    <p class="fade-in">Your new meme-coin on the Solana blockchain</p>
+  </header>
 
-<header>
-    <img src="logo.png" alt="ShibeBucks Logo"> <!-- Voeg hier het logo bestand toe -->
-    <h1>ShibeBucks (SBX)</h1>
-    <p>Your new meme-coin on the Solana blockchain</p>
-</header>
+  <nav>
+    <a href="#vision">Our Vision</a>
+    <a href="#future">The Future</a>
+    <a href="#process">The Process</a>
+    <a href="#whitepaper">Whitepaper</a>
+    <a href="https://discord.gg/fPH47Y5aqv" target="_blank">Join Discord</a>
+  </nav>
 
-<nav>
-    <a href="javascript:void(0);" onclick="showSection('about')">Our Vision</a>
-    <a href="javascript:void(0);" onclick="showSection('future')">The Future</a>
-    <a href="javascript:void(0);" onclick="showSection('process')">The Process</a>
-    <a href="javascript:void(0);" onclick="showSection('whitepaper')">Whitepaper</a>
-</nav>
+  <section id="vision" class="fade-in">
+    <h2 class="section-title">Our Vision</h2>
+    <p>ShibeBucks aims to be the ultimate meme-coin for the Solana ecosystem. Built for speed, scalability, and fun, our vision is to unite the Solana community around utility-powered memes. With lightning-fast transactions and a strong community, we are creating a movement driven by holders and believers. SBX isn't just another meme-coin — it's a cultural shift.</p>
+  </section>
 
-<div class="main-section">
-    <h2>About ShibeBucks</h2>
-    <p>ShibeBucks (SBX) is a meme-coin built on the Solana blockchain with the goal of offering fun, fast transactions and community-driven growth. Join us to make this the next big thing in the world of meme-coins!</p>
-    
-    <h3>Our Mission</h3>
-    <p>At ShibeBucks, we believe in community. Our mission is to create a meme-coin that stands out, grows through engagement, and remains fun and fast. With innovative features and a focus on decentralization, ShibeBucks is the meme-coin of the future!</p>
-    
-    <h3>Tokenomics</h3>
-    <ul>
-        <li>🔥 20% burned at launch</li>
-        <li>💧 26% liquidity pool</li>
-        <li>🎁 24% Community Rewards / Airdrops</li>
-        <li>📣 20% Marketing / Promotions</li>
-        <li>👨‍💻 10% Development Team</li>
-    </ul>
-    
-    <h3>How We Burn</h3>
-    <p>At launch, 20% of the total supply of ShibeBucks will be burned. This process reduces total supply and creates scarcity, increasing value over time. We believe in transparency and keeping the burn process secure and visible for the community.</p>
-    
-    <a href="presale.html" class="presale-button">Join the Presale</a>
-</div>
+  <section id="future" class="fade-in">
+    <h2 class="section-title">The Future</h2>
+    <p>Our roadmap is ambitious: cross-chain integration, NFT-powered airdrops, gamified staking, and exclusive community perks. We aim to partner with other Solana dApps and build out a full ecosystem around ShibeBucks. We believe that meme culture can go beyond hype — it can be a gateway to real-world adoption. The future of SBX is green, wild, and unstoppable.</p>
+  </section>
 
-<!-- Hidden sections for navigation -->
-<div id="about" class="section">
-    <h2>Our Vision</h2>
-    <p>This is where the content of the "Our Vision" section goes...</p>
-</div>
+  <section id="process" class="fade-in">
+    <h2 class="section-title">The Process</h2>
+    <p>SBX launched with a fair token distribution: 20% burned, 26% liquidity pool, 24% community airdrops, 20% for marketing, and 10% to the dev team. We’ve locked liquidity and made our burns public and transparent. Our process is to grow organically through utility, community, and meme power. We're here for the long run.</p>
+  </section>
 
-<div id="future" class="section">
-    <h2>The Future</h2>
-    <p>This is where the content of the "The Future" section goes...</p>
-</div>
+  <section id="whitepaper" class="fade-in">
+    <h2 class="section-title">Whitepaper</h2>
+    <p>The official ShibeBucks whitepaper outlines everything from tokenomics, governance structure, community growth models, to our long-term roadmap. It includes technical explanations, future product plans, and governance protocol specs. Available soon at www.shibebucks.com/whitepaper.pdf</p>
+  </section>
 
-<div id="process" class="section">
-    <h2>The Process</h2>
-    <p>This is where the content of the "The Process" section goes...</p>
-</div>
-
-<div id="whitepaper" class="section">
-    <h2>Whitepaper</h2>
-    <p>This is where the content of the "Whitepaper" section goes...</p>
-</div>
-
-<!-- Footer with email subscription -->
-<footer>
-    <form>
-        <input type="email" placeholder="Enter your email for updates" required>
-        <button type="submit">Subscribe</button>
-    </form>
-</footer>
-
-<script>
-    function showSection(sectionId) {
-        var sections = document.querySelectorAll('.section');
-        sections.forEach(function(section) {
-            section.classList.remove('active');
-        });
-        document.getElementById(sectionId).classList.add('active');
-    }
-</script>
-
+  <div class="discord-banner fade-in">
+    <a href="https://discord.gg/fPH47Y5aqv" target="_blank">🔥 Join the SBX Discord Now!</a>
+  </div>
 </body>
 </html>
+
